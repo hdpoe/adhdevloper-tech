@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 INDEX='index.html'
 
-read -r HEADER <<-EOF
+read -r -d '' HEADER <<-EOF
 <html>
   <h1>ADHDeveloper Blog</h1>
   <p>
@@ -19,10 +19,11 @@ EOF
 
 POSTS=$(grep -v body archive.html)
 
-read -r FOOTER <<-EOF
+read -r -d '' FOOTER <<-EOF
      </body>
 </html>
 EOF
+
 
 echo "${HEADER}${POSTS}${FOOTER}" > index.html
 echo "Index file created"
