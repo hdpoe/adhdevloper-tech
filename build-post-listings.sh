@@ -5,7 +5,6 @@ OUTPUT="archive.html"
 
 # Start the HTML file
 echo "<html><head><title>Archive</title></head><body><h1>Archive of Posts</h1>" > $OUTPUT
-
 # Function to extract the first 500 words after the first <p> tag
 extract_content() {
     # Use sed to isolate the content after the first <p> tag, then use awk to get the first 500 words
@@ -17,7 +16,6 @@ find posts -type f -name "*.html" | while read file; do
     TITLE=$(basename "$file" .html | sed 's/-/ /g' | sed -E "s/[[:alnum:]_'-]+/\u&/g")
     echo $file
     PUBLISH_DATE=$(echo -n $file | awk -NF'/' '{print $2 "/" $3 "/" $4}')
-EOF
 
     # Extract the content
     CONTENT=$(extract_content "$file")
@@ -27,6 +25,6 @@ EOF
 done
 
 # End the HTML file
-echo "</body></html>" >> $OUTPUT
+printf "\n</body></html>" >> $OUTPUT
 
 echo "Archive page created as $OUTPUT"
