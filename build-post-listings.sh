@@ -4,7 +4,7 @@
 OUTPUT="archive.html"
 
 # Start the HTML file
-echo "<html><head><title>Archive</title></head><body><h1>Archive of Posts</h1>" > $OUTPUT
+echo "<html><head><title>Archive</title></head><body>SITE_HEADER<h2>Archive of Posts</h2>" > $OUTPUT
 # Function to extract the first 500 words after the first <p> tag
 extract_content() {
     # Use sed to isolate the content after the first <p> tag, then use awk to get the first 500 words

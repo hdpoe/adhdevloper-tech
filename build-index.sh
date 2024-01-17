@@ -4,17 +4,7 @@ INDEX='index.html'
 read -r -d '' HEADER <<-EOF
 <html>
  <body>
-  <h1>ADHDeveloper Blog</h1>
-  <p>
-    Unconnected ramblings on development, technology, business, security and more by a rambling engineer.
-  </p>
-  <hr />
-  <p>
-    <a href="./archive.html">Archive</a> &middot;
-    <a href="./about-the-site.html">About the Site</a> &middot;
-    <a href="./about-the-author.html">About the Author</a> &middot;
-    <a href="./contact.html">Contact Me</a>
-  </p>
+SITE_HEADER
   <h2>Posts</h2>
 EOF
 
