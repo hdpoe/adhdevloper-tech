@@ -1,16 +1,6 @@
 <html>
   <body>
-    <h1><a style="color:black;text-decoration:none" href="/index.html">ADHDeveloper Blog</a></h1>
-  <p>
-    Unconnected ramblings on development, technology, business, security and more by a rambling engineer.
-  </p>
-  <p>
-    <a href="/archive.html">Archive</a> &middot; 
-    <a href="/about-the-site.html">About the Site</a> &middot; 
-    <a href="/about-the-author.html">About the Author</a> &middot; 
-    <a href="/contact.html">Contact Me</a>
-  </p>
-  <hr />
+    SITE_HEADER
   <h2>About the Site</h2>
   <h3>Why does your site look like it was created during the Roosevelt administration (Teddy not Franklin)?</h3>
   <p>The design for this website was inspired almost entirely by <a href="https://motherfuckingwebsite.com/">https://motherfuckingwebsite.com/</a>. The arguments for this design are laid out very clearly and explicitly at the aforementioned site.</p>
